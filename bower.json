@@ -1,0 +1,22 @@
+{
+  "name": "brandonrukin-portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Brandon Rukin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/brandonrukin/brandonrukin-portfolio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}

@@ -25,7 +25,7 @@ gulp.task('styles', function() {
       .pipe(postcss(processors))
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./dist/css'))
+      .pipe(gulp.dest('./public/css'))
       .pipe(browserSync.reload({
          stream: true
       }));
@@ -34,7 +34,7 @@ gulp.task('styles', function() {
 gulp.task('images', function() {
    gulp.src('images/*')
       .pipe(imagemin())
-      .pipe(gulp.dest('./dist/images'));
+      .pipe(gulp.dest('./public/images'));
 }); //images task
 
 gulp.task('browserSync', function() {

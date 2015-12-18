@@ -1,9 +1,11 @@
 @import 'normalize.css';
+
 @lost flexbox flex;
 
 body {
 	background: url(../images/ohio.png) #2B3E51 center top no-repeat;
 	background-size: 1150px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .intro {
