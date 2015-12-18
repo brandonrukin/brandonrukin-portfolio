@@ -3,23 +3,9 @@
 @lost flexbox flex;
 
 body {
-	background: url(../images/ohio.png) #2B3E51 center top no-repeat;
-	background-size: 1150px;
-	font-family: 'Roboto', sans-serif;
+	font: 16px 'Lato', sans-serif;
 }
 
-.intro {
-	&__container {
-		text-align: center;
-		height: 400px;
-		img {
-			width: 5.5em;
-		}
-		h1 {
-			color: #ECF0F1;
-		}
-		p {
-			color: #999;
-		}
-	}
-}
+@import '_intro.css';
+@import '_skills.css';
+
