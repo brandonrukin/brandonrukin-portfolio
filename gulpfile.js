@@ -9,7 +9,8 @@ var postcss = require('gulp-postcss'),
    lost = require('lost'),
    rucksack = require('rucksack-css'),
    sourcemaps = require('gulp-sourcemaps'),
-   browserSync = require('browser-sync');
+   browserSync = require('browser-sync'),
+   imagemin = require('gulp-imagemin');
 
 gulp.task('styles', function() {
    var processors = [
@@ -20,21 +21,28 @@ gulp.task('styles', function() {
       cssnext({})
    ];
 
-   return gulp.src('styles.css')
+   return gulp.src('css/styles.css')
       .pipe(postcss(processors))
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./dest'))
+      .pipe(gulp.dest('./dist/css'))
       .pipe(browserSync.reload({
          stream: true
       }));
 }); //styles task
 
+gulp.task('images', function() {
+   gulp.src('images/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./dist/images'));
+}); //images task
+
 gulp.task('browserSync', function() {
    browserSync({
       server: {
          baseDir: './'
-      }
+      },
+      notify: false
    })
 }); //browserSync task
 
