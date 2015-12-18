@@ -1,3 +1,10 @@
+@import 'normalize.css';
+
 body {
-	color: blue;
+	color: red;
+}
+
+section {
+	height: 500px;
+	background: #CCC;
 }

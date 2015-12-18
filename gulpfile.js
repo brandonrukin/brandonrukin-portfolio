@@ -24,7 +24,7 @@ gulp.task('styles', function() {
       .pipe(postcss(processors))
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./css'))
+      .pipe(gulp.dest('./dest'))
       .pipe(browserSync.reload({
          stream: true
       }));
