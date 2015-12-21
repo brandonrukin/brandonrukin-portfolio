@@ -21,20 +21,20 @@ gulp.task('styles', function() {
       cssnext({})
    ];
 
-   return gulp.src('css/styles.css')
+   return gulp.src('src/css/styles.css')
       .pipe(postcss(processors))
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./public/css'))
+      .pipe(gulp.dest('./dist/css'))
       .pipe(browserSync.reload({
          stream: true
       }));
 }); //styles task
 
 gulp.task('images', function() {
-   gulp.src('images/*')
+   gulp.src('src/images/*')
       .pipe(imagemin())
-      .pipe(gulp.dest('./public/images'));
+      .pipe(gulp.dest('./dist/images'));
 }); //images task
 
 gulp.task('browserSync', function() {
