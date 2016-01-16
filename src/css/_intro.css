@@ -3,7 +3,7 @@
 	background-size: cover;
 	&__container {
 		text-align: center;
-		padding: 150px 40px;
+		padding: 130px 40px;
 		.logo {
 			margin-bottom: 20px;
 			width: 5.5em;

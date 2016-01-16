@@ -1,12 +1,13 @@
 .tools {
 	background: #FFF;
 	padding: 30px 50px;
-	color: #999;
+	color: #777;
 	text-align: center;
 	&__header {
 		font-size: 1.8em;
 		font-weight: 500;
 		margin-bottom: 0px;
+		color: #26858E;
 		b {
 			font-weight: 700;
 		}
@@ -21,21 +22,23 @@
 
 .tools-list {
 	lost-center: 1180px;
-	.tool-item {
+	list-style: none;
+	padding: 0;
+	&__item {
   		lost-column: 1/2 2 80px;
   		text-align: left;
   		margin-bottom: 30px;
-  		img {
-  			height: 30px;
-  			margin-right: 10px;
-  		}
-  		.tool-title {
+  		h2 {
   			margin-top: 10px;
   			margin-bottom: 0px;
   			font-size: 1.6em;
 			font-weight: 400;
+			img {
+	  			height: 30px;
+	  			margin-right: 11px;
+  			}
   		}
-  		.tool-details {
+  		p {
   			font-size: 1em;
   			margin-top: 10px;
   			font-weight: 300;
@@ -44,6 +47,18 @@
 	}
 }
 
+@media screen and (max-width: 840px) {
+	.tools-list {
+		lost-center: 1180px;
+		list-style: none;
+		padding: 0;
+		&__item {
+	  		lost-column: 1/1 1 80px;
+	  	}
+	}
+}
+
+/* Old code
 @media screen and (max-width: 980px) {
 	.skills {
 		padding: 30px 40px;
@@ -99,3 +114,4 @@
 		}
 	}
 }
+*/
