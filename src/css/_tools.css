@@ -1,10 +1,9 @@
 .tools {
-	background: #FFF;
+	background: #F2F2F2;
 	padding: 30px 50px;
-	color: #777;
 	text-align: center;
 	&__header {
-		font-size: 1.8em;
+		font-size: 1.9em;
 		font-weight: 500;
 		margin-bottom: 0px;
 		color: #26858E;
@@ -13,15 +12,16 @@
 		}
 	}
 	&__sub-header {
-		font-size: 1.3em;
+		font-size: 1.4em;
 		font-weight: 300;
 		margin-top: 10px;
 		margin-bottom: 50px;
+		color: #004057;
 	}
 }
 
 .tools-list {
-	lost-center: 1180px;
+	lost-center: 1080px;
 	list-style: none;
 	padding: 0;
 	&__item {
@@ -29,6 +29,7 @@
   		text-align: left;
   		margin-bottom: 30px;
   		h2 {
+  			color: #666;
   			margin-top: 10px;
   			margin-bottom: 0px;
   			font-size: 1.6em;
@@ -40,14 +41,18 @@
   		}
   		p {
   			font-size: 1em;
-  			margin-top: 10px;
+  			margin-top: 8px;
   			font-weight: 300;
   			line-height: 1.4em;
+  			color: #333;
   		}
 	}
 }
 
 @media screen and (max-width: 840px) {
+	.tools {
+		padding: 30px 30px;
+	}
 	.tools-list {
 		lost-center: 1180px;
 		list-style: none;
